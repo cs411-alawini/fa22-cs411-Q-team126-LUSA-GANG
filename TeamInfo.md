@@ -8,7 +8,6 @@
 | TeamName    |         LUSA-GANG      |
 | Captain     |    Sahil Armaan Kumar  |
 | Captain     |  sahilak2@illinois.edu |
-|             |kumararmaan500@gmail.com|
 | Member1     |        Udit Methi      |
 | Member1     |   uditm2@illinois.edu  |
 | Member2     |        Arnav Sethi     |
