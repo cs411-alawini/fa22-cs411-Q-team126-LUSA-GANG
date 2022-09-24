@@ -19,10 +19,10 @@
 
 |   Info      |        Description     |
 | ----------- | ---------------------- |
-|  Title      |       ProjectTitle     |
+|  Title      |       PASFAIL    |
 | System URL  |      link_to_system    |
 | Video Link  |      link_to_video     |
 
 ## Project Summary
 
-This is a summary of the project!
+Our application is designed to help students who are confused about what classes to take for an upcoming semester based on the Department, Course, and Primary Instructors. Users will be able to find specific information about the courses GPA based on different aspects. Our application would also predict the GPA you can received based on what classes the student would be taking with different Primary Instructors. 
