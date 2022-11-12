@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>411 Final System</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/boots>
+ </head>
+
+ <body>
+   <div class=" container mt-4">
+    <div class="card">
+        <div class="card-body">
+            <h2>Insert your userid, username and password below</h2>
+            <form action="insertuser" method="POST">
+                <div class="form-group">
+                    <label for="userid">User ID</label>
+                    <input type="text" class="form-control col-lg-9" id="userid" aria-describedby="emailHelp"
+                        placeholder="Enter User ID" name="userid">
+
+                    <label for="username">Username</label>
+                    <input type="text" class="form-control col-lg-9" id="username" aria-describedby="emailHelp"
+                        placeholder="Enter Username" name="username">
+
+                    <label for="password">Password</label>
+                    <input type="text" class="form-control col-lg-9" id="password" aria-describedby="emailHelp"
+                        placeholder="Enter Password" name="password">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+
+        <div class="card-body">
+            <h2>Return first 10 courses in database</h2>
+            <form action="selectcourses" method="GET">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+
+        <div class="card-body">
+            <h2>Delete user with specified userid</h2>
+            <form action="deleteuser" method="POST">
+                <div class="form-group">
+                    <label for="userid">User ID</label>
+                    <input type="text" class="form-control col-lg-9" id="userid" aria-describedby="emailHelp"
+                        placeholder="Enter User ID" name="userid">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+
+        <div class="card-body">
+            <h2>Update user with specified userid to new userid</h2>
+            <form action="updateuser" method="POST">
+                <div class="form-group">
+                    <label for="userid">Current User ID</label>
+                    <input type="text" class="form-control col-lg-9" id="curruserid" aria-describedby="emailHelp"
+                        placeholder="Enter Current User ID" name="curruserid">
+
+                    <label for="userid">New User ID</label>
+                    <input type="text" class="form-control col-lg-9" id="newuserid" aria-describedby="emailHelp"
+                        placeholder="Enter New User ID" name="newuserid">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+
+        <div class="card-body">
+            <h2>Search for courses in specified subject</h2>
+            <form action="searchcourses" method="POST">
+                <div class="form-group">
+                    <label for="sname">Subject Name</label>
+                    <input type="text" class="form-control col-lg-9" id="sname" aria-describedby="emailHelp"
+                        placeholder="Enter Subject Name" name="sname">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+
+	<div class="card-body">
+            <h2>Search for users with specified userid</h2>
+            <form action="searchusers" method="POST">
+                <div class="form-group">
+                    <label for="userid">User ID</label>
+                    <input type="text" class="form-control col-lg-9" id="userid" aria-describedby="emailHelp"
+                        placeholder="Enter User ID" name="userid">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+
+        <div class="card-body">
+            <h2>AQ1: Return average GPA for courses in the last 5 years</h2>
+            <form action="selectavggpa" method="POST">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+
+        <div class="card-body">
+            <h2>AQ2: Return maximum average GPA of 100 level courses over 3.75 average GPA</h2>
+            <form action="selectmaxgpa" method="POST">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        
+    </div>
+    </body>
+
+</html>
