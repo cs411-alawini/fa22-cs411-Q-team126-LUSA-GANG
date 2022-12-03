@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/boots>
- </head>
+ </head> 
 
  <body>
    <div class=" container mt-4">
@@ -27,7 +27,12 @@
                     <input type="text" class="form-control col-lg-9" id="password" aria-describedby="emailHelp"
                         placeholder="Enter Password" name="password">
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button id="submit" class="btn btn-primary">Submit</button>
+                <script type="text/javascript">
+                    document.getElementById("myButton").onclick = function () {
+                        location.ahref = 'views/redirect.ejs';
+                    };
+                </script>
             </form>
         </div>
 
@@ -45,6 +50,10 @@
                     <label for="userid">User ID</label>
                     <input type="text" class="form-control col-lg-9" id="userid" aria-describedby="emailHelp"
                         placeholder="Enter User ID" name="userid">
+
+                    <label for="password">Password</label>
+                    <input type="text" class="form-control col-lg-9" id="password" aria-describedby="emailHelp"
+                        placeholder="Enter Password" name="password">
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
@@ -54,13 +63,17 @@
             <h2>Update user with specified userid to new userid</h2>
             <form action="updateuser" method="POST">
                 <div class="form-group">
-                    <label for="userid">Current User ID</label>
-                    <input type="text" class="form-control col-lg-9" id="curruserid" aria-describedby="emailHelp"
-                        placeholder="Enter Current User ID" name="curruserid">
+                    <label for="userid">User ID</label>
+                    <input type="text" class="form-control col-lg-9" id="userid" aria-describedby="emailHelp"
+                        placeholder="Enter User ID" name="userid">
+                    
+                    <label for="oldpassword">Old Password</label>
+                    <input type="text" class="form-control col-lg-9" id="oldpassword" aria-describedby="emailHelp"
+                        placeholder="Enter Old Password" name="old password">
 
-                    <label for="userid">New User ID</label>
-                    <input type="text" class="form-control col-lg-9" id="newuserid" aria-describedby="emailHelp"
-                        placeholder="Enter New User ID" name="newuserid">
+                    <label for="userid">New Password</label>
+                    <input type="text" class="form-control col-lg-9" id="newpassword" aria-describedby="emailHelp"
+                        placeholder="Enter New Password" name="newpassword">
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
@@ -78,7 +91,7 @@
             </form>
         </div>
 
-	<div class="card-body">
+        <div class="card-body">
             <h2>Search for users with specified userid</h2>
             <form action="searchusers" method="POST">
                 <div class="form-group">
@@ -99,11 +112,25 @@
 
         <div class="card-body">
             <h2>AQ2: Return maximum average GPA of 100 level courses over 3.75 average GPA</h2>
-            <form action="selectmaxgpa" method="POST">
+            <form action="selectmaxgpa" method="GET">
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
         </div>
-        
+
+	<div class="card-body">
+            <h2>SP1: Return AVG GPA Grouped By Subjects</h2>
+            <form action="selectsubavggpa" method="POST">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+
+	<div class="card-body">
+            <h2>SP2: Return Results of Both Advanced Queries</h2>
+            <form action="selectadvanced" method="POST">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+
     </div>
     </body>
 

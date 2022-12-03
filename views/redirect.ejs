@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <script type = "text/javascript" src="server.js"> </script> -->
+    <title>411 Final System</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/boots">
+</head>
+
+<h1>
+    <%= res%>
+</h1>
+
+<!-- <body>
+    <div id="display"></div>
+    <script type = "javascripttext/" src="server.js"> </script>
+</body> -->
+
+<!-- <script type="text/javascript">
+    document.getElementById("display").innerHTML = JSON.stringify(res);
+</script> -->
+
+<!-- 
+<script type="text/javascript">
+    $.ajax({
+        url: 'res',
+        dataType: 'json',
+        success: function(data) {
+            for (var i=0; i<data.length; i++) {
+                var row = $('<tr><td>' + data[i].subject+ '</td><td>' + data[i].courseNo + '</td><td>' + data[i].HighestGPA + '</td></tr>');
+                $('#myTable').append(row);
+            }
+        },
+        error: function(jqXHR, textStatus, errorThrown){
+            alert('Error: ' + textStatus + ' - ' + errorThrown);
+        }
+    });
+    </script> -->
+
+</html>
