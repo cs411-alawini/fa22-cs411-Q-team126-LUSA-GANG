@@ -14,3 +14,6 @@ You should make sure you keep your project root files up-to-date. Information fo
 
 ## Code Contribution
 Individual code contribution will be used to evaluate individual contribution to the project.
+
+## Final Video
+You can access our final video demoing our application here: https://drive.google.com/file/d/14YazFgo9UbKbzVg_gm7wibUNk-A-hBxm/view?usp=sharing
